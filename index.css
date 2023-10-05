@@ -8,12 +8,26 @@ html {
     font-size: 62.5%;
 }
 
+body {
+    width: 100%;
+    height: 100vh;
+}
+
 body .container {
     width: 100%;
     height: 100vh;
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 1fr 4fr 1.5fr 1fr .5fr 2fr;
+    grid-template-rows: 1fr 6fr 1.5fr 1fr .5fr 2fr;
+    color: white;
+}
+
+.area1, .area2, .area3, .area4, .area5, .area6 {
+    background-image: url('./img/descargar\ \(1\).jpeg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
 }
 
 .area1 {
@@ -23,18 +37,19 @@ body .container {
 
 .area1 p, i {
     font-size: 2rem;
-    margin: 30px 40px;
+    padding: 30px 40px;
 }
 
 .area2 {
     display: flex;
     justify-content: center;
     align-items: center;
+    padding: 60px 40px 0;
 }
 
 .area2 section {
-    width: 230px;
-    height: 230px;
+    width: 400px;
+    height: 400px;
     border: none;
     border-radius: 50%;
     background-image: url('./img/RayCharles.jpeg');
@@ -45,8 +60,9 @@ body .container {
 
 .area3 {
     display: flex;
+    align-items: center;
     justify-content: space-between;
-    margin-top: 20px;
+    padding-top: 50px;
 }
 
 .area3 i:nth-child(1) {
@@ -62,21 +78,38 @@ body .container {
 }
 
 .area3 p span:nth-child(1) {
-    font-size: 1.6rem;
+    font-size: 2rem;
 }
 
 .area3 p span:nth-child(3) {
-    font-size: 1.2rem;
+    font-size: 1.6rem;
 }
 
 .area4 {
     display: flex;
     justify-content: center;
     align-items: start;
-    padding: 0 40px;
+    padding: 40px 40px 0;
 }
 
 .area4 img {
-    width: 90%;
+    width: 100%;
     height: 70%;
+    border-radius: 8px;
+}
+
+.area5 {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 30px 40px;
+    font-size: 1.2rem;
+}
+
+.area6 {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 40px 0;
 }
