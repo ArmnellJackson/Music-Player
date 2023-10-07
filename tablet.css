@@ -1,0 +1,22 @@
+body {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    background: #000;
+}
+
+body .container {
+    grid-column: 2;
+}
+
+.area1,
+.area2,
+.area3,
+.area4,
+.area5,
+.area6 {
+    background-image: url('./img/RayCharles.jpeg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}

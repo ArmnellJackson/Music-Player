@@ -8,9 +8,14 @@ html {
     font-size: 62.5%;
 }
 
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400&display=swap');
+/* font-family: 'Oswald', sans-serif; */
+
 body {
     width: 100%;
     height: 100vh;
+    font-family: 'Oswald', sans-serif;
+    font-weight: 200;
 }
 
 body .container {
@@ -22,8 +27,13 @@ body .container {
     color: white;
 }
 
-.area1, .area2, .area3, .area4, .area5, .area6 {
-    background-image: url('./img/descargar\ \(1\).jpeg');
+.area1,
+.area2,
+.area3,
+.area4,
+.area5,
+.area6 {
+    background-image: url('./img/descargar.jpeg');
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -35,7 +45,8 @@ body .container {
     justify-content: space-between;
 }
 
-.area1 p, i {
+.area1 p,
+i {
     font-size: 2rem;
     padding: 30px 40px;
 }
@@ -44,7 +55,7 @@ body .container {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 60px 40px 0;
+    padding: 60px 40px 64px;
 }
 
 .area2 section {
@@ -56,6 +67,8 @@ body .container {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    box-shadow:  13px 13px 13px #6f6f6f,
+    -13px -13px 13px #9f9f9f;
 }
 
 .area3 {
@@ -104,12 +117,17 @@ body .container {
     display: flex;
     justify-content: space-between;
     padding: 30px 40px;
-    font-size: 1.2rem;
+    font-size: 1.6rem;
 }
 
 .area6 {
     width: 100%;
     display: flex;
     justify-content: space-between;
+    align-items: center;
     padding: 40px 0;
+}
+
+.area6 i:nth-child(3) {
+    font-size: 4.6rem;
 }
